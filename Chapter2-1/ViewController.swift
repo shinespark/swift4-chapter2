@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         print(msg1, msg2, separator: "/")
         print("実行中:", #function)
         print("aaa" + String(10))
+        
+        let year: Optional<Int> = 2018
+        if let year = year {
+            print("\(year)年あけましておめでとうございます。")
+        } else {
+            // `year` が `nil` だったときの処理
+        }
+        print("\(year)年あけましておめでとうございます")
     }
 
     override func didReceiveMemoryWarning() {
